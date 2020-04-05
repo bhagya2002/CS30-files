@@ -24,11 +24,87 @@
     <option>7-12</option>
     </select>
     <br>
+
+<input type="number" name="runs">
+<!-- button for running through the simulation once -->
+<button type="submit" value="submit" name="runers">Run Simulation A User Choosen Number of Times</button>
+<!-- sim is run 5 time -->
+<p>
+<?php 
+// button clicked for a choosen numebr of runs of the simulation
+if(isset($_GET['runers'])) {
+    // varibales
+    $pos = $_GET['position'];
+    $result3a = ' ';
+    $times_run = $_GET['runs'];
+
+    // check options
+    switch ($pos) {
+        // case 1 (nothing is choosen)
+        case "Choose a position":
+            $result3a = "Please choose a position";
+            echo $result3a;
+        break;
+        // case 2 (position 1-6)
+        case "1-6":
+            for ($i = 0; $i < $times_run; $i++) {
+                // random # between 0, 100;
+    $ranNum2 = rand(0, 100);
+            if ($ranNum2 >=0 && $ranNum2 <= 45) {
+                $result3a = "You got a BANANA!";
+                echo "$result3a<br>";
+            } else if ($ranNum2 >45 && $ranNum2 <= 75) {
+                $result3a = "You got a GREEN SHELL!";
+                echo "$result3a<br>";
+            } else if ($ranNum2 >75 && $ranNum2 <= 95) {
+                $result3a = "You got a STAR!";
+                echo "$result3a<br>";
+            } else if ($ranNum2 >95 && $ranNum2 <= 99) {
+                $result3a = "You got a GOLDEN MUSHROOM!";
+                echo "$result3a<br>";
+            } else {
+                $result3a = "You got the BULLET BILL!";
+                echo "$result3a<br>";
+            }
+        }
+        break;
+            // case 3 (position 7-12)
+            case "7-12":
+                for ($i = 0; $i <$times_run; $i++) {
+                    // random # between 0, 100;
+    $ranNum2 = rand(0, 100);
+                if ($ranNum2 >=0 && $ranNum2 <= 5) {
+                    $result3a = "You got a BANANA!";
+                    echo "$result3a<br>";
+                } else if ($ranNum2 >5 && $ranNum2 <= 10) {
+                    $result3a = "You got a GREEN SHELL!";
+                    echo "$result3a<br>";
+                } else if ($ranNum2 >10 && $ranNum2 <= 30) {
+                    $result3a = "You got a STAR!";
+                    echo "$result3a<br>";
+                } else if ($ranNum2 >30 && $ranNum2 <= 40) {
+                    $result3a = "You got a GOLDEN MUSHROOM!";
+                    echo "$result3a<br>";
+                } else {
+                    $result3a = "You got the BULLET BILL!";
+                    echo "$result3a<br>";
+                }
+            }
+            break;
+    }
+}
+?>
+</p>
+
+    <br>
     
 <!-- button for running through the simulation once -->
     <button type="submit" value="submit" name="get1">Run Simulation Once</button>
 <!-- button for running through the simulation five times -->
     <button type="submit" value="submit" name="get5">Run Simulation 5 Times</button>
+
+<!-- button for running through the simulation until 10 bullet bills -->
+<button type="submit" value="submit" name="bills">Get me 10 bullet bills</button>
 
 </form>
 
@@ -103,9 +179,6 @@ if(isset($_GET['get5'])) {
     $pos = $_GET['position'];
     $result2a = ' ';
 
-    // random # between 0, 100;
-    $ranNum2 = rand(0, 100);
-
     // check options
     switch ($pos) {
         // case 1 (nothing is choosen)
@@ -116,6 +189,8 @@ if(isset($_GET['get5'])) {
         // case 2 (position 1-6)
         case "1-6":
             for ($i = 0; $i <5; $i++) {
+                 // random # between 0, 100;
+                $ranNum2 = rand(0, 100);
             if ($ranNum2 >=0 && $ranNum2 <= 45) {
                 $result2a = "You got a BANANA!";
                 echo "$result2a<br>";
@@ -137,6 +212,8 @@ if(isset($_GET['get5'])) {
             // case 3 (position 7-12)
             case "7-12":
                 for ($i = 0; $i <5; $i++) {
+                     // random # between 0, 100;
+                    $ranNum2 = rand(0, 100);
                 if ($ranNum2 >=0 && $ranNum2 <= 5) {
                     $result2a = "You got a BANANA!";
                     echo "$result2a<br>";
@@ -159,6 +236,77 @@ if(isset($_GET['get5'])) {
 }
 ?>
 </p>
+
+<!-- sim is run 5 time -->
+<p>
+<?php 
+// button clicked for 10 bullet bills
+if(isset($_GET['bills'])) {
+    // varibales
+    $pos = $_GET['position'];
+    $result4a = ' ';
+    $bullet = 0;
+
+    // check options
+    switch ($pos) {
+        // case 1 (nothing is choosen)
+        case "Choose a position":
+            $result4a = "Please choose a position";
+            echo $result4a;
+        break;
+        // case 2 (position 1-6)
+        case "1-6":
+            for ($i = 0; $i < ($bullet = 10); $i++) {
+                 // random # between 0, 100;
+    $ranNum2 = rand(0, 100);
+            if ($ranNum2 >=0 && $ranNum2 <= 45) {
+                $result4a = "You got a BANANA!";
+                echo "$result4a<br>";
+            } else if ($ranNum2 >45 && $ranNum2 <= 75) {
+                $result4a = "You got a GREEN SHELL!";
+                echo "$result4a<br>";
+            } else if ($ranNum2 >75 && $ranNum2 <= 95) {
+                $result4a = "You got a STAR!";
+                echo "$result4a<br>";
+            } else if ($ranNum2 >95 && $ranNum2 <= 99) {
+                $result4a = "You got a GOLDEN MUSHROOM!";
+                echo "$result4a<br>";
+            } else {
+                $result4a = "You got the BULLET BILL!";
+                echo "$result4a<br>";
+                $bullet++;
+            }
+        }
+        break;
+            // case 3 (position 7-12)
+            case "7-12":
+                for ($bullet = 0; $bullet < 11; $bullet++) {
+                     // random # between 0, 100;
+    $ranNum2 = rand(0, 100);
+                if ($ranNum2 >=0 && $ranNum2 <= 5) {
+                    $result4a = "You got a BANANA!";
+                    echo "$result4a<br>";
+                } else if ($ranNum2 >5 && $ranNum2 <= 10) {
+                    $result4a = "You got a GREEN SHELL!";
+                    echo "$result4a<br>";
+                } else if ($ranNum2 >10 && $ranNum2 <= 30) {
+                    $result4a = "You got a STAR!";
+                    echo "$result4a<br>";
+                } else if ($ranNum2 >30 && $ranNum2 <= 40) {
+                    $result4a = "You got a GOLDEN MUSHROOM!";
+                    echo "$result4a<br>";
+                } else {
+                    $result4a = "You got the BULLET BILL!";
+                    echo "$result4a<br>";
+                    $bullet++;
+                }
+            }
+            break;
+    }
+}
+?>
+</p>
+
 
     
 </body>
