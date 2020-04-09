@@ -1,0 +1,104 @@
+/*font imports from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* universal styles */
+* {
+    box-sizing: border-box;
+}
+
+/* body tags */
+body {
+    background-color: #454545;
+    color: #fff;
+}
+
+/* header of the project */
+#wiki-header {
+    color: rgb(255, 100, 150);
+    text-align: center;
+    font-size: 65px;
+    margin-top: 210px;
+    font-family: 'Comic Neue', cursive;
+    text-underline-position: below;
+}
+
+/* entire container for the search */
+#wiki-container {
+    text-justify: auto;
+    width: 50%;
+    color: black;
+    margin: -90px auto;
+    padding-left: 50px;
+
+}
+
+/* decription for what to do */
+#wiki-ask {
+    color: rgb(150, 255, 100);
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* input form */
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    background-position-y: 13px;
+    padding: 9px 20px 12px 70px;
+    color: rgb(150, 100, 255);
+    font-size: 45px;
+    outline: none;
+}
+
+/* in place when nothing is entered */
+input[type=text]::placeholder {
+    color: rgba(150, 100, 255, 0.5);
+}
+
+/* when clicked on */
+input[type=text]:focus {
+    border: none;
+}
+
+/* search button */
+#search {
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: rgba(150, 255, 100, 0.8);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* results from search */
+.res {
+    color: #fff;
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-top: 1px !important;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* results links */
+.res a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* reults links on hover */
+.res a:hover {
+    color: rgb(255, 100, 150);
+    text-decoration: none;
+}

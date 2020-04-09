@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Search API Thing</title>
+    <!-- link the styles sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- header of the project -->
+        <div id="wiki-header">
+            <h1>Wikipedia Search</h1>
+        </div>
+
+        <div id="wiki-container">
+            <form>
+                <!-- making a search bad -->
+                <div id="wiki-ask">
+                    <!-- <label for="searcher">What would you like to search?</label> -->
+                </div>
+                <br>
+                <!-- user input into the search bar -->
+                <input id="searchTerm" type="text" name="searcher" placeholder="Search Here..">
+                </input>
+                <!-- submit the input -->
+                <button id='search' type="button">Search</button>
+                <!-- random search on wiki -->
+                <!-- <a href="https://en.wikipedia.org/wiki/Special:Random">Random</a> -->
+
+                <!-- reults will show here -->
+                <div id="output"></div>
+            </form>
+        </div>
+
+
+        <!-- ajax library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!-- link the JavaScript file -->
+        <script src="app.js"></script>
+
+    </main>
+</body>
+
+</html>
