@@ -1,13 +1,5 @@
 // on load of the page (that was DOMContentLoaded does)
 document.addEventListener('DOMContentLoaded', function () {
-    $(function () {
-        // enter
-        $("#searchTerm").keypress(function searchIt(e) {
-            if (e.keyCode === 13) {
-                searchIt();
-            }
-        })
-    });
     // on the click of the search button it preforms the function below
     document.getElementById('search').onclick = function searchIt() {
         // gets value from the user input
