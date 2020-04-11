@@ -20,8 +20,7 @@ if (isset($_GET['all'])) {
 //  run this
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i <= count($nicknames); $i++) {
-   $indexer = $i -1;
-  $randval = ($nicknames[$indexer]);
+  $randval = $nicknames[$i - '1'];
  }
 } 
 
