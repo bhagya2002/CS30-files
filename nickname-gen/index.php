@@ -4,15 +4,11 @@ $fname = $_GET['fname'];
 $lname = $_GET['lname'];
 $randval = "Nickname";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
-
+$randomi = rand(1, count($nicknames));
 
 // random nickname gen
 if (isset($_GET['random'])) {
 
-  // local varibles
-  // random index value from 1, array.length
- $randomi = rand(1, count($nicknames));
- 
 //  run this
 // takes the nicknames array and uses the random index -1 to compensate for array properties
  $randval = $nicknames[$randomi - 1];
