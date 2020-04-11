@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment #2</title>
 </head>
+
 <body>
 <!-- title of the assignment -->
 <h1>Mario Cart Simulator</h1>
 
 <!-- the form that takes the information -->
 <form action="#">
-<!-- options list -->
+    <!-- options list -->
     <select name="position" value="position">
 <!-- options -->
     <option>Choose a position</option>
