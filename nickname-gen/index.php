@@ -22,6 +22,7 @@ $indexer = -1;
  for ($i = 1 ;$i <= count($nicknames); $i++) {
    $indexer = $i -1;
   $randval = "$nicknames[$indexer]<br>";
+  echo $indexer;
  }
 } 
 
