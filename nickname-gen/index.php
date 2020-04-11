@@ -55,6 +55,8 @@ if (isset($_GET['random'])) {
 <button id="prev" name="prev">Prev</button>
 <button id="random" name="random">Random</button>
 <button id="next" name="next">Next</button>
+<br>
+<button id="all" name="all">List All Nicknames</button>
 
 </form>
 
