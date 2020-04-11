@@ -56,7 +56,7 @@ if (isset($_GET['all'])) {
 <!-- first name -->
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
-  <p id="randname-d" name="value"><?php echo "$randval"; ?></p>
+  <p id="randname-d" name="value"><?php echo "$randval<br>"; ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
