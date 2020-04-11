@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // gets value from the user input
         var searchTerm = $("#searchTerm").val();
         // wikipedia API link for search
-        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?";
+        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + searchTerm + "&callback=?";
 
         // ajax and JSON to do the API search
         $.ajax({
