@@ -1,0 +1,44 @@
+/* Style Sheet */
+html {
+  background-color: grey;
+}
+
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px 100px;
+  background-color: white;
+}
+
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+h1 {
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+p {
+  letter-spacing: 0.5px;
+}
+
+#nickname {
+  font-weight: bold;
+}
+
+div {
+  height: 400px;
+  border: 1px solid grey;
+}
+
+div p {
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
