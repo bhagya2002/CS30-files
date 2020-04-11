@@ -16,11 +16,12 @@ if (isset($_GET['random'])) {
 
 // list all nicknames
 if (isset($_GET['all'])) {
-
+$indexer = -1;
 //  run this
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i <= count($nicknames); $i++) {
-  $randval = $nicknames[$i -1] "<br>";
+   $indexer = $i -1;
+  $randval = $nicknames[$indexer];
  }
 } 
 
