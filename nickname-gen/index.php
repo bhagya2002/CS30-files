@@ -16,6 +16,14 @@ if (isset($_GET['random'])) {
  $varall = " ";
 } 
 
+// add a nickname
+if(isset($_GET['add-nam'])) {
+  $addname = $_GET['add-n'];
+
+// run this
+array_push($nicknames, $addname);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +87,12 @@ if (isset($_GET['all'])) {
 <button id="next" name="next">Next</button>
 <br>
 <button id="all" name="all">List All Nicknames</button>
+
+<!-- user entered -->
+<!-- add nickname -->
+<label for="add-n">Add nickname:</label>
+<input type="text" name="add-n" id="add-n">
+<button name="add-nam">Add Nickname</button>
 
 </form>
 
