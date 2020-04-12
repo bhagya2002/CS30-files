@@ -52,6 +52,9 @@ if (isset($_GET['random'])) {
   <?php 
   echo $randval; 
   
+  ?></p>
+  <p id="allname-d" name="value-a">
+  <?php  
   // list all nicknames
 if (isset($_GET['all'])) {
   $indexer = 0;
@@ -66,8 +69,6 @@ if (isset($_GET['all'])) {
    }
   } 
   ?></p>
-  <p id="allname-d" name="value-a">
- </p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
