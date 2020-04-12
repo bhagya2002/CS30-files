@@ -16,19 +16,6 @@ if (isset($_GET['random'])) {
  $varall = " ";
 } 
 
-  // list all nicknames
-  if (isset($_GET['all'])) {
-    $indexer = 0;
-    
-    //  run this
-    // loops through the whole array and displys all the nicknames
-     for ($i = 1 ; $i < count($nicknames) +1; $i++) {
-        $indexer = $i -1;
-        $randval = " ";
-        $varall = "$nicknames[$indexer]<br>";
-     }
-    } 
-
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +55,19 @@ if (isset($_GET['random'])) {
   ?></p>
   <p id="allname-d" name="value-a">
   <?php  
- echo $varall;
+  // list all nicknames
+if (isset($_GET['all'])) {
+  $indexer = 0;
+  
+  //  run this
+  // loops through the whole array and displys all the nicknames
+   for ($i = 1 ; $i < count($nicknames) +1; $i++) {
+      $indexer = $i -1;
+      $randval = " ";
+      $varall = "$nicknames[$indexer]<br>";
+  echo $varall;
+   }
+  } 
   ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
