@@ -25,7 +25,7 @@ $indexer = -1;
    $indexer = $i -1;
    $randval = " ";
   $varall = "$nicknames[$indexer]<br>";
-  echo $varall;
+
  }
 } 
 
