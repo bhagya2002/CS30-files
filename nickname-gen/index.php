@@ -87,6 +87,7 @@ if (isset($_GET['all'])) {
 <button id="next" name="next">Next</button>
 <br>
 <button id="all" name="all">List All Nicknames</button>
+<br>
 
 <!-- user entered -->
 <!-- add nickname -->
