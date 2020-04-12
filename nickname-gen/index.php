@@ -22,7 +22,7 @@ $indexer = -1;
 
 //  run this
 // loops through the whole array and displys all the nicknames
- for ($i = 1 ; $i < 7; $i++) {
+ for ($i = 1 ; $i < count($nicknames) +1; $i++) {
     $indexer = $i -1;
     $randval = " ";
     $varall = "$nicknames[$indexer]<br>";
