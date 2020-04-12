@@ -22,7 +22,7 @@ if(isset($_GET['add-nam'])) {
 
 // run this
 array_push($nicknames, $addname);
-echo $nicknames;
+print_r($nicknames);
 }
 
 ?>
