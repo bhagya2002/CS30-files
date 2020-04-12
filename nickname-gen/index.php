@@ -3,7 +3,7 @@
 $fname = $_GET['fname'];
 $lname = $_GET['lname'];
 $randval = "Nickname";
-$varall = " ";
+$varall = "All Nicknames";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
 
@@ -13,6 +13,7 @@ if (isset($_GET['random'])) {
 //  run this
 // takes the nicknames array and uses the random index -1 to compensate for array properties
  $randval = $nicknames[$randomi - 1];
+ $varall = " ";
 } 
 
 // list all nicknames
@@ -61,7 +62,7 @@ $indexer = -1;
 <!-- first name -->
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
-  <p id="randname-d" name="value"><?php echo "$randval";?></p>
+  <p id="randname-d" name="value"><?php echo "$randval"; echo $varall ?></p>
   <p id="allname-d" name="value-a"><?php echo $varall; ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
