@@ -20,8 +20,7 @@ if (isset($_GET['random'])) {
 if(isset($_GET['add-nam'])) {
 
 // run this
-array_push($nicknames, $_GET['add-n']);
-print($nicknames);
+array_push($nicknames, "$_GET['add-n']");
 }
 
 ?>
