@@ -2,12 +2,13 @@
 // global variables
 $fname = $_GET['fname'];
 $lname = $_GET['lname'];
-$randval = "Nickname";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
 
 // random nickname gen
 if (isset($_GET['random'])) {
+// local variables
+$randval = "Nickname";
 
 //  run this
 // takes the nicknames array and uses the random index -1 to compensate for array properties
@@ -16,12 +17,14 @@ if (isset($_GET['random'])) {
 
 // list all nicknames
 if (isset($_GET['all'])) {
+  // local variables
+$allval = " ";
 $indexer = -1;
 //  run this
 // loops through the whole array and displys all the nicknames
- for ($i = 1 ;$i <= count($nicknames); $i++) {
+ for ($i = 1 ;$i < count($nicknames)+1; $i++) {
    $indexer = $i -1;
-  $randval = $nicknames[$indexer];
+  $allval = $nicknames[$indexer];
   echo $indexer;
  }
 } 
@@ -58,7 +61,7 @@ $indexer = -1;
 <!-- first name -->
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
-  <p id="randname-d" name="value"><?php echo "$randval<br>"; ?></p>
+  <p id="randname-d" name="value"><?php echo "$randval<br>";  echo "$allval<br>"; ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
