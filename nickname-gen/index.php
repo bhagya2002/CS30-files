@@ -50,9 +50,6 @@ array_push($nicknames, $addname);
 <!-- last name -->
 <label for="lname">Last Name:</label>
 <input type="text" name="lname" id="lname" value="Doe">
-<!-- add a nickname -->
-<label for="add-n">Add nickname:</label>
-<input type="text" name="add-n" id="add-n">
 
 <!-- display info -->
 <div>
@@ -91,9 +88,12 @@ if (isset($_GET['all'])) {
 <br>
 <button id="all" name="all">List All Nicknames</button>
 <br>
+
+<!-- user entered -->
+<!-- add nickname -->
+<label for="add-n">Add nickname:</label>
+<input type="text" name="add-n" id="add-n">
 <button name="add-nam">Add Nickname</button>
-
-
 
 </form>
 
