@@ -75,7 +75,7 @@ if (isset($_GET['all'])) {
       $indexer = $i -1;
       $randval = " ";
       $varall = "$nicknames[$indexer]<br>";
-  echo $varall;
+
    }
   } 
   ?></p>
