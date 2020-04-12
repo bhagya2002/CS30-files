@@ -2,7 +2,7 @@
 // global variables
 $fname = $_GET['fname'];
 $lname = $_GET['lname'];
-$randval = "Nickname";
+$randval = " ";
 $varall = " ";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
@@ -23,7 +23,7 @@ $indexer = -1;
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i < count($nicknames)+1; $i++) {
    $indexer = $i -1;
-  $varall = $nicknames[$indexer];
+  $varall = "$nicknames[$indexer]<br>";
   echo $varall;
  }
 } 
@@ -61,7 +61,7 @@ $indexer = -1;
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
   <p id="randname-d" name="value"><?php echo "$randval";?></p>
-  <p id="allname-d" name="value"><?php echo "$varall . ", "";?></p>
+  <p id="allname-d" name="value"><?php echo $varall . ", ";?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
