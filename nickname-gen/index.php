@@ -3,6 +3,7 @@
 $fname = $_GET['fname'];
 $lname = $_GET['lname'];
 $randval = "Nickname";
+$varall = " ";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
 
@@ -17,7 +18,7 @@ if (isset($_GET['random'])) {
 // list all nicknames
 if (isset($_GET['all'])) {
 $indexer = -1;
-$varall = ' ';
+
 //  run this
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i < count($nicknames)+1; $i++) {
