@@ -15,14 +15,14 @@ if (isset($_GET['random'])) {
 } 
 
 // list all nicknames
-if (isset($_POST['all'])) {
+if (isset($_GET['all'])) {
 $indexer = -1;
 $varall = ' ';
 //  run this
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i < count($nicknames)+1; $i++) {
    $indexer = $i -1;
-  $_POST['value-a'] = $nicknames[$indexer];
+  $varall = $nicknames[$indexer];
   echo $varall;
  }
 } 
@@ -60,7 +60,7 @@ $varall = ' ';
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
   <p id="randname-d" name="value"><?php echo "$randval";?></p>
-  <p id="allname-d" name="value-a"><?php echo $varall . ',';?></p>
+  <p id="allname-d" name="value"><?php echo $varall . ',';?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
