@@ -18,11 +18,10 @@ if (isset($_GET['random'])) {
 
 // add a nickname
 if(isset($_GET['add-nam'])) {
-  $addname = $_GET['add-n'];
 
 // run this
-array_push($nicknames, $addname);
-echo "$nicknames";
+array_push($nicknames, $_GET['add-n']);
+print($nicknames);
 }
 
 ?>
