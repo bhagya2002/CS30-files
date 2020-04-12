@@ -62,7 +62,7 @@ echo $varall;
 <!-- first name -->
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
-  <p id="randname-d" name="value"><?php echo "$randval"; echo $varall ?></p>
+  <p id="randname-d" name="value"><?php echo $randval; ?></p>
   <p id="allname-d" name="value-a"><?php echo $varall; ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
