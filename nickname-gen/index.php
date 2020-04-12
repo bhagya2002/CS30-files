@@ -64,8 +64,8 @@ if (isset($_GET['all'])) {
    for ($i = 1 ; $i < count($nicknames) +1; $i++) {
       $indexer = $i -1;
       
-      $randval = "$nicknames[$indexer]<br>";
-  echo $randval;
+      $varall = "$nicknames[$indexer]<br>";
+  echo $varall;
    }
   } 
   ?></p>
