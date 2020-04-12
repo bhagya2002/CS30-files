@@ -21,7 +21,7 @@ $indexer = -1;
 // loops through the whole array and displys all the nicknames
  for ($i = 1 ;$i <= count($nicknames); $i++) {
    $indexer = $i -1;
-  $randval = "$nicknames[$indexer]<br>";
+  $randval = $nicknames[$indexer];
   echo $indexer;
  }
 } 
@@ -58,7 +58,7 @@ $indexer = -1;
 <!-- first name -->
   <p id="fname-d"><?php echo "$fname"; ?></p>
   <!-- random nickname -->
-  <p id="randname-d" name="value"><?php echo "$randval"; ?></p>
+  <p id="randname-d" name="value"><?php echo "$randval<br>"; ?></p>
   <!-- last name -->
   <p id="last-d"><?php echo "$lname"; ?></p>
 </div>
