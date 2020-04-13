@@ -10,7 +10,7 @@ $randomi = rand(1, count($nicknames));
 $randname = "SELECT COUNT(*) FROM nickname";
 // make query & get results
 $result = mysqli_query($conn, $randname);
-echo $randname;
+echo $result;
 
 // random nickname gen
 if (isset($_GET['random'])) {
