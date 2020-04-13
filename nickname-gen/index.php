@@ -1,18 +1,19 @@
 <?php
 include('db_connect.php');
 // global variables
-$fname = $_GET['fname'];
-$lname = $_GET['lname'];
+// $fname = $_GET['fname'];
+// $lname = $_GET['lname'];
 $randval = "Nickname";
 $varall = "All Nicknames";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
+$randname = "SELECT COUNT(*) FROM nickname";
+echo $randname;
 
 // random nickname gen
 if (isset($_GET['random'])) {
 
-$randname = 'SELECT COUNT(nickname) FROM cs30';
-echo $randname;
+
 
 //  run this
 // takes the nicknames array and uses the random index -1 to compensate for array properties
