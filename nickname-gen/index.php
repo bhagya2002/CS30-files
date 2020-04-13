@@ -1,4 +1,5 @@
 <?php
+include('db_connect.php');
 // global variables
 $fname = $_GET['fname'];
 $lname = $_GET['lname'];
@@ -10,10 +11,13 @@ $randomi = rand(1, count($nicknames));
 // random nickname gen
 if (isset($_GET['random'])) {
 
+$randname = 'SELECT COUNT(nickname) FROM cs30';
+echo $randname;
+
 //  run this
 // takes the nicknames array and uses the random index -1 to compensate for array properties
- $randval = $nicknames[$randomi - 1];
- $varall = " ";
+//  $randval = $nicknames[$randomi - 1];
+//  $varall = " ";
 } 
 
 // add a nickname
