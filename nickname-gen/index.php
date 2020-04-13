@@ -8,12 +8,12 @@ $varall = "All Nicknames";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
 $randname = 'SELECT COUNT(*) FROM nickname';
-// make query & get results
-$result = mysqli_query($conn, $randname);
 
-// fetch the resulting rows as an array
-$todos = mysqli_fetch_all($result, MYSQLI_ASSOC);
-echo $todos;
+$result -> $conn -> query($sql);
+
+$row = $result -> fetch_array(MYSQL_ASSOC);
+echo count($row);
+$result -> free_result();
 
 // random nickname gen
 if (isset($_GET['random'])) {
