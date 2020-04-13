@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $randname);
 
 // fetch the resulting rows as an array
 $todos = mysqli_fetch_all($result, MYSQLI_ASSOC);
-echo $todos;
+echo count($todos);
 
 // random nickname gen
 if (isset($_GET['random'])) {
