@@ -7,7 +7,7 @@ $randval = "Nickname";
 $varall = "All Nicknames";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");
 $randomi = rand(1, count($nicknames));
-$randname = 'SELECT COUNT(*) FROM nickname';
+$sql = 'SELECT COUNT(*) FROM nickname';
 
 $result -> $conn -> query($sql);
 
