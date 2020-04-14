@@ -1,7 +1,9 @@
 <?php
 // global variables
-$fname = $_GET['fname'];
-$lname = $_GET['lname'];
+$fname = "John";
+$lname = "Doe";
+// $fname = $_GET['fname'];
+// $lname = $_GET['lname'];
 $randval = "Nickname";
 $varall = "All Nicknames";
 $nicknames = array("the Emperor", "the Droideka", "the Jedi", "Twinkle Toes", "the Scientist", "the Tank");

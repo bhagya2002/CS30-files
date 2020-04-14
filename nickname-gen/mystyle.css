@@ -1,14 +1,11 @@
 /* Style Sheet */
-html {
-  background-color: grey;
-}
 
 body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 100px;
+  padding: 0px 30px;
   background-color: white;
 }
 
@@ -37,9 +34,13 @@ div {
 }
 
 div p {
-  font-size: 50px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-style: italic;
+}
+
+#randname-d {
+  font-size: 25px !important;
 }
 
 #allname-d {
