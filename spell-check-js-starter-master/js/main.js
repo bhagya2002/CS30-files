@@ -70,21 +70,6 @@ function ch1Linear() {
       document.getElementById("ch1-result").innerHTML = not + " words NOT found in the dictionary."; // releases a statment for what is not found
     }
   }
-
-
-
-  // for (let i = 0; i < aliceWordsCh1.length; i++) {
-  //   let words = aliceWordsCh1;
-  //   let compare = linearSearch(dictionary, words);
-  //   let not = 0;
-
-  //   if (compare == -1) {
-  //     not++;
-  //     console.log(words[i]);
-  //   } else {
-  //     document.getElementById("word-result").innerHTML = "Linear Search: " + userWord + " IS in the dictionary.";
-  //   }
-  // }
   // **********************************
 }
 
@@ -94,7 +79,22 @@ function ch1Linear() {
 // Output a total count of words not found in the dictionary in the paragraph with the id 'ch1-result'
 function ch1Binary() {
   // **********************************
-  // * YOUR CODE HERE...
+  // declare variables
+  let not = 0;
+  // loop through the array of Chapter 1 words 
+  for (let i = 0; i < aliceWordsCh1.length; i++) {
+    // format each word to lowercase
+    let words = aliceWordsCh1[i].toLowerCase();
+
+    // binary search algo
+    let compare = binarySearch(dictionary, words);
+    // code to run when the word is not found in the dictionary 
+    if (compare == -1) {
+      not++; // add 1 to the know how many r not found
+      console.log(words); // shows the words not found in console
+      document.getElementById("ch1-result").innerHTML = not + " words NOT found in the dictionary."; // releases a statment for what is not found
+    }
+  }
   // **********************************
 }
 
@@ -104,7 +104,22 @@ function ch1Binary() {
 // Output a total count of words not found in the dictionary in the paragraph with the id 'full-result'
 function fullLinear() {
   // **********************************
-  // * YOUR CODE HERE...
+  // declare variables
+  let not = 0;
+  // loop through the array of the whole text 
+  for (let i = 0; i < aliceWordsFull.length; i++) {
+    // format each word to lowercase
+    let words = aliceWordsFull[i].toLowerCase();
+
+    // linear search algo
+    let compare = linearSearch(dictionary, words);
+    // code to run when the word is not found in the dictionary 
+    if (compare == -1) {
+      not++; // add 1 to the know how many r not found
+      console.log(words); // shows the words not found in console
+      document.getElementById("full-result").innerHTML = not + " words NOT found in the dictionary."; // releases a statment for what is not found
+    }
+  }
   // **********************************
 }
 
@@ -114,6 +129,21 @@ function fullLinear() {
 // Output a total count of words not found in the dictionary in the paragraph with the id 'full-result'
 function fullBinary() {
   // **********************************
-  // * YOUR CODE HERE...
+  // declare variables
+  let not = 0;
+  // loop through the array of the whole text
+  for (let i = 0; i < aliceWordsFull.length; i++) {
+    // format each word to lowercase
+    let words = aliceWordsFull[i].toLowerCase();
+
+    // binary search algo
+    let compare = binarySearch(dictionary, words);
+    // code to run when the word is not found in the dictionary 
+    if (compare == -1) {
+      not++; // add 1 to the know how many r not found
+      console.log(words); // shows the words not found in console
+      document.getElementById("full-result").innerHTML = not + " words NOT found in the dictionary."; // releases a statment for what is not found
+    }
+  }
   // **********************************
 }
