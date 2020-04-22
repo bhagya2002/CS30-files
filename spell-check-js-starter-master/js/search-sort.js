@@ -5,7 +5,15 @@
 // If item found, return index where found, else return -1.
 function linearSearch(anArray, item) {
     // **********************************
-    // * YOUR CODE HERE...
+    // loops through an entire array whatever it is
+    for (let i = 0; i < anArray.length; i++) {
+        // once the item is found in the array the index is returned
+        if (anArray[i] === item) {
+            return i;
+        }
+    }
+    // if the item is not found in the array then -1 is returned
+    return -1;
     // **********************************
 }
 
@@ -14,6 +22,28 @@ function linearSearch(anArray, item) {
 // If item found, return index where found, else return -1.
 function binarySearch(anArray, item) {
     // **********************************
-    // * YOUR CODE HERE...
+    // set variables for left and right limits
+    let minlim = 0;
+    let maxlim = anArray.length - 1;
+
+    // while the left is less than or equal to the right this code is run
+    while (minlim <= maxlim) {
+        // find the average and that is the mid-value that is used to test
+        midval = Math.floor((maxlim + minlim) / 2);
+        // if the mid-value is the item then return the mid-value
+        if (anArray[midval] === item) {
+            return midval;
+        }
+        // if the mid-value is less than the item then left side becomes mid-value + 1
+        if (anArray[midval] < item) {
+            minlim = midval + 1;
+        }
+        // if the mid-value is greater than the item then right side becomes mid-value -1
+        if (anArray > item) {
+            maxlim = midval - 1;
+        }
+    }
+    // if the item is not found in the array then -1 is returned
+    return -1;
     // **********************************
 }
