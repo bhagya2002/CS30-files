@@ -29,17 +29,17 @@ function binarySearch(anArray, item) {
     // while the left is less than or equal to the right this code is run
     while (minlim <= maxlim) {
         // find the average and that is the mid-value that is used to test
-        midval = Math.floor((maxlim + minlim) / 2);
+        let midval = Math.floor((maxlim + minlim) / 2);
         // if the mid-value is the item then return the mid-value
         if (anArray[midval] === item) {
             return midval;
         }
         // if the mid-value is less than the item then left side becomes mid-value + 1
-        if (anArray[midval] < item) {
+        else if (anArray[midval] < item) {
             minlim = midval + 1;
         }
         // if the mid-value is greater than the item then right side becomes mid-value -1
-        if (anArray > item) {
+        else {
             maxlim = midval - 1;
         }
     }

@@ -45,11 +45,7 @@ function binaryWord() {
 
   // Search dictionary for userWord and output result
   let searchResult = binarySearch(dictionary, userWord);
-  if (searchResult == -1) {
-    document.getElementById("word-result").innerHTML = "Binary Search: " + userWord + " is NOT in the dictionary.";
-  } else {
-    document.getElementById("word-result").innerHTML = "Binary Search: " + userWord + " IS in the dictionary.";
-  }
+
 }
 
 // CH1 LINEAR FUNCTION CRITERIA
@@ -57,8 +53,38 @@ function binaryWord() {
 // Output to the console every word that is not found in the dictionary array.
 // Output a total count of words not found in the dictionary in the paragraph with the id 'ch1-result'
 function ch1Linear() {
-  // **********************************
-  // * YOUR CODE HERE...
+  // ********************************** 
+  // declare variables
+  let not = 0;
+  // loop through the array of Chapter 1 words 
+  for (let i = 0; i < aliceWordsCh1.length; i++) {
+    // format each word to lowercase
+    let words = aliceWordsCh1[i].toLowerCase();
+
+    // linear search algo
+    let compare = linearSearch(dictionary, words);
+    // code to run when the word is not found in the dictionary 
+    if (compare == -1) {
+      not++; // add 1 to the know how many r not found
+      console.log(words); // shows the words not found in console
+      document.getElementById("ch1-result").innerHTML = not + " words NOT found in the dictionary."; // releases a statment for what is not found
+    }
+  }
+
+
+
+  // for (let i = 0; i < aliceWordsCh1.length; i++) {
+  //   let words = aliceWordsCh1;
+  //   let compare = linearSearch(dictionary, words);
+  //   let not = 0;
+
+  //   if (compare == -1) {
+  //     not++;
+  //     console.log(words[i]);
+  //   } else {
+  //     document.getElementById("word-result").innerHTML = "Linear Search: " + userWord + " IS in the dictionary.";
+  //   }
+  // }
   // **********************************
 }
 
