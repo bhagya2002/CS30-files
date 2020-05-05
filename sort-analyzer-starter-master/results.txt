@@ -1,0 +1,41 @@
+SORT ANALYZER RESULTS
+**********************************************************
+BUBBLE SORT - Average Time to Sort Array
+Random Array: ___
+Reversed Array: ___
+Nearly Sorted Array: ___
+Few Unique Array: ___
+
+SELECTION SORT - Average Time to Sort Array
+Random Array: ___
+Reversed Array: ___
+Nearly Sorted Array: ___
+Few Unique Array: ___
+
+INSERTION SORT - Average Time to Sort Array
+Random Array: ___
+Reversed Array: ___
+Nearly Sorted Array: ___
+Few Unique Array: ___
+***********************************************************
+
+
+SORT ANALYZER OBSERVATIONS
+***********************************************************
+What did you find interesting about the results?
+
+
+The Bubble Sort times should have shown an improved time for the
+Nearly Sorted and Few Unique arrays.  Explain why...
+
+
+The Selection Sort times should have been fairly consistent for 
+all of the data arrays.  Explain why...
+
+
+The Insertion Sort times should have been very fast for the
+Nearly Sorted and Few Unique arrays and much worse for the 
+Reversed array.  Explain why...
+
+
+************************************************************

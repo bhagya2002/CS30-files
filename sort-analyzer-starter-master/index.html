@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Sort Analyzer</h1>
+  <p>Explore how long it takes various sort algorithms to sort different types of data...</p>
+  <hr>
+
+  <h2>Bubble Sort</h2>
+  <p>
+    Select Data: <select id="bubble-data">
+      <option value="random">Random Data</option>
+      <option value="reversed">Reversed Data</option>
+      <option value="nearly-sorted">Nearly Sorted Data</option>
+      <option value="few-unique">Few Unique Data</option>
+    </select>
+    <button id="bubble-btn">Sort with Bubble Sort</button>
+  </p>
+  <p>Results: <span id="bubble-results">----</span></p>
+  <hr>
+
+  <h2>Selection Sort</h2>
+  <p>
+    Select Data: <select id="selection-data">
+      <option value="random">Random Data</option>
+      <option value="reversed">Reversed Data</option>
+      <option value="nearly-sorted">Nearly Sorted Data</option>
+      <option value="few-unique">Few Unique Data</option>
+    </select>
+    <button id="selection-btn">Sort with Selection Sort</button>
+  </p>
+  <p>Results: <span id="selection-results">----</span></p>
+  <hr>
+
+  <h2>Insertion Sort</h2>
+  <p>
+    Select Data: <select id="insertion-data">
+      <option value="random">Random Data</option>
+      <option value="reversed">Reversed Data</option>
+      <option value="nearly-sorted">Nearly Sorted Data</option>
+      <option value="few-unique">Few Unique Data</option>
+    </select>
+    <button id="insertion-btn">Sort with Insertion Sort</button>
+  </p>
+  <p>Results: <span id="insertion-results">----</span></p>
+  <hr>
+
+  <!-- Load JavaScript -->
+  <script src="js/search-sort.js"></script>
+  <script src="js/file-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

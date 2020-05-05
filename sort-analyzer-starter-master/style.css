@@ -1,0 +1,24 @@
+html {
+  background: #09457E;
+}
+
+body {
+  background: white;
+  width: 800px;
+  padding: 20px 75px;
+  margin: auto;
+  font-family: Arial;
+}
+
+button {
+  background: #7e3409;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+span {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
