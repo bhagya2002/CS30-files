@@ -47,13 +47,18 @@ function selectionSort(anArray) {
 function insertionSort(anArray) {
     // loop through the whole array
     for (let i = 1; i < anArray.length; i++) {
+        // insert value
         let x = i - 1;
+        // temporary insert position
         let temp = anArray[i];
         // moves the value in the index until it passes all the values larger or untill it hit [0]
         while (x >= 0 && anArray[x] > temp) {
+            // slide the test element
             anArray[x + 1] = anArray[x];
+            // insert position is decreased
             x--;
         }
+        // value to insert 
         anArray[x + 1] = temp;
     }
 }
