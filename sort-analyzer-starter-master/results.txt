@@ -8,7 +8,7 @@ Few Unique Array: 327 milliseconds
 
 SELECTION SORT - Average Time to Sort Array
 Random Array: 88 milliseconds
-Reversed Array: 95 milliseconds
+Reversed Array: 92 milliseconds
 Nearly Sorted Array: 87 milliseconds
 Few Unique Array: 89 milliseconds
 
@@ -23,19 +23,26 @@ Few Unique Array: 1 milliseconds
 SORT ANALYZER OBSERVATIONS
 ***********************************************************
 What did you find interesting about the results?
+- Honestly, I was quite surprised as to how fast the algorithm actually run and finished going through the arrays while ordering them as well. Particularly Insertion Sort finished way faster than the other two types. For all of them running through the whole array while having almost ordered values went so fast when I predicted it would take a little bit longer. 
 
 
 The Bubble Sort times should have shown an improved time for the
 Nearly Sorted and Few Unique arrays.  Explain why...
+- When the algorithm looped through the Nearly Sorted array only a couple values had to be swapped which also reduced the time required for the algorithm to run. When it checks the adjacent element the value is the same therefore nothing has to be done(swapped).
+- When it looped through the array all the values were the same for the Few Unique arrays so no swap had to be done reducing the total time required for the algorithm to run. The adjacent values are mostly in order so no swap is required. Most of the time is taken to run through the array and swap the couple values not in order.
 
 
 The Selection Sort times should have been fairly consistent for 
 all of the data arrays.  Explain why...
+- This algorithm looks for the minimum value right away so it has to loop throught the whole array and compare its values. The same is done for each data array. 
 
 
 The Insertion Sort times should have been very fast for the
 Nearly Sorted and Few Unique arrays and much worse for the 
 Reversed array.  Explain why...
+- This was the fastest out of all of them as this is the most efficient. It checks the array for the sorted portion and splits the array into two parts, sorted and unsorted. 
+- The Nearly Sorted array and the Few Unique array took very little time as most of it if not all is already sorted. The algorithm only had to move a very few number of values. 
+- Reversed array took much more time due to the algorithm having to move everything each time. It didnt take that long because the algorithm moved the value to the right spot every time before moving to the next value. It did not had to go through the array again over and over to swap, did everything for one value until it was in the correct spot. 
 
 
 ************************************************************
