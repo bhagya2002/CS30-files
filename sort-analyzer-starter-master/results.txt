@@ -1,22 +1,22 @@
 SORT ANALYZER RESULTS
 **********************************************************
 BUBBLE SORT - Average Time to Sort Array
-Random Array: ___
-Reversed Array: ___
-Nearly Sorted Array: ___
-Few Unique Array: ___
+Random Array: 470 milliseconds
+Reversed Array: 411 milliseconds
+Nearly Sorted Array: 326 milliseconds
+Few Unique Array: 327 milliseconds
 
 SELECTION SORT - Average Time to Sort Array
-Random Array: ___
-Reversed Array: ___
-Nearly Sorted Array: ___
-Few Unique Array: ___
+Random Array: 88 milliseconds
+Reversed Array: 95 milliseconds
+Nearly Sorted Array: 87 milliseconds
+Few Unique Array: 89 milliseconds
 
 INSERTION SORT - Average Time to Sort Array
-Random Array: ___
-Reversed Array: ___
-Nearly Sorted Array: ___
-Few Unique Array: ___
+Random Array: 52 milliseconds
+Reversed Array: 103 milliseconds
+Nearly Sorted Array: 2 milliseconds
+Few Unique Array: 1 milliseconds
 ***********************************************************
 
 
