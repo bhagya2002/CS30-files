@@ -45,5 +45,15 @@ function selectionSort(anArray) {
 
 // Use Insertion Sort algorithm to sort array argument
 function insertionSort(anArray) {
-
+    // loop through the whole array
+    for (let i = 1; i < anArray.length; i++) {
+        let x = i - 1;
+        let temp = anArray[i];
+        // moves the value in the index until it passes all the values larger or untill it hit [0]
+        while (x >= 0 && anArray[x] > temp) {
+            anArray[x + 1] = anArray[x];
+            x--;
+        }
+        anArray[x + 1] = temp;
+    }
 }
