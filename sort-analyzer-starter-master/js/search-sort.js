@@ -21,8 +21,8 @@ function bubbleSort(anArray) {
 
 // Use Selection Sort algorithm to sort array argument
 function selectionSort(anArray) {
-    // loop through the whole array
-    for (let i = 0; i < anArray.length; i++) {
+    // loop through the whole array until the second last index
+    for (let i = 0; i < (anArray.length - 1); i++) {
         // set min position to the current fill slot
         let min = i;
         // set the value to the right of min index
